@@ -1,0 +1,30 @@
+{
+  "author" : "Anthony Collurafici",
+  "commands" : [
+    {
+      "script" : "nearest-height.cocoascript",
+      "handeler": "onRun",
+      "shortcut" : "ctrl e",
+      "name" : "Nearest Height",
+      "identifier" : "nearestheight"
+    },{
+      "script" : "nearest-width.cocoascript",
+      "handeler": "onRun",
+      "shortcut" : "ctrl w",
+      "name" : "Nearest Width",
+      "identifier" : "nearestwidth"
+    }
+  ],
+  "menu" : {
+    "title" : "Sketch Nearest 8",
+    "items": [
+      "nearestheight",
+      "nearestwidth"
+    ]
+  },
+  "identifier" : "com.example.sketch.nudgitshapes",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "acollurafici@gmail.com",
+  "name" : "Sketch Nearest 8"
+}

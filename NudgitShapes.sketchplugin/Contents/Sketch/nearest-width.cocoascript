@@ -1,0 +1,27 @@
+// Increase Height (ctrl w)
+/*
+  Author: Anthony Collurafici
+  Date: October 2015
+  Version: 0.1
+
+*/
+
+var onRun = function (context) { 
+  var selection = context.selection, 
+    layer = selection[0];
+    frame = [layer frame],
+    width = [frame width],
+    height = [frame height];
+
+    if (width % 8 === 0) {
+    log("true");
+    width = width + 8;
+    } else {
+    log("false"); 
+    width = Math.ceil(width/8.0) * 8;
+    }
+
+    
+  [[layer frame] setWidth: (width)]
+  log(width);
+}
