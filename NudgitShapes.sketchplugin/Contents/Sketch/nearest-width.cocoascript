@@ -1,4 +1,4 @@
-// Increase Height (ctrl w)
+// Increase Width (ctrl w)
 /*
   Author: Anthony Collurafici
   Date: October 2015
@@ -7,8 +7,9 @@
 */
 
 var onRun = function (context) { 
-  var selection = context.selection, 
-    layer = selection[0];
+  var selection = context.selection,
+    doc = context.document,
+    layer = selection[0],
     frame = [layer frame],
     width = [frame width],
     height = [frame height];
@@ -23,5 +24,6 @@ var onRun = function (context) {
 
     
   [[layer frame] setWidth: (width)]
+  [doc showMessage: "Width: " + width];
   log(width);
 }

@@ -8,7 +8,8 @@
 
 var onRun = function (context) { 
   var selection = context.selection, 
-    layer = selection[0];
+    doc = context.document,
+    layer = selection[0],
     frame = [layer frame],
     width = [frame width],
     height = [frame height];
@@ -23,5 +24,6 @@ var onRun = function (context) {
 
     
   [[layer frame] setHeight: (height)]
+  [doc showMessage: "Height: " + height];
   log(height);
 }
