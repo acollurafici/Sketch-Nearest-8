@@ -18,12 +18,13 @@ var onRun = function (context) {
     log("true");
     height = height + 8;
     } else {
-    log("false"); 
+    log("false");
     height = Math.ceil(height/8.0) * 8;
     }
 
-    
+
   [[layer frame] setHeight: (height)]
   [doc showMessage: "Height: " + height];
   log(height);
+  context.document.reloadInspector()
 }

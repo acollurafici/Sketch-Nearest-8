@@ -18,12 +18,13 @@ var onRun = function (context) {
     log("true");
     width = width + 8;
     } else {
-    log("false"); 
+    log("false");
     width = Math.ceil(width/8.0) * 8;
     }
 
-    
+
   [[layer frame] setWidth: (width)]
   [doc showMessage: "Width: " + width];
   log(width);
+  context.document.reloadInspector()
 }
