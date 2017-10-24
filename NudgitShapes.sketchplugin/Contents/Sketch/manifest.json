@@ -4,13 +4,13 @@
     {
       "script" : "nearest-height.cocoascript",
       "handeler": "onRun",
-      "shortcut" : "ctrl e",
+      "shortcut" : "cmd ctrl 8",
       "name" : "Nearest Height",
       "identifier" : "nearestheight"
     },{
       "script" : "nearest-width.cocoascript",
       "handeler": "onRun",
-      "shortcut" : "ctrl w",
+      "shortcut" : "cmd opt 8",
       "name" : "Nearest Width",
       "identifier" : "nearestwidth"
     }
@@ -23,7 +23,7 @@
     ]
   },
   "identifier" : "com.example.sketch.nudgitshapes",
-  "version" : "1.0",
+  "version" : "1.1",
   "description" : "",
   "authorEmail" : "acollurafici@gmail.com",
   "name" : "Sketch Nearest 8",
