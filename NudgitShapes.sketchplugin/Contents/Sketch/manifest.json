@@ -10,7 +10,7 @@
     },{
       "script" : "nearest-width.cocoascript",
       "handeler": "onRun",
-      "shortcut" : "cmd opt 8",
+      "shortcut" : "cmd 8",
       "name" : "Nearest Width",
       "identifier" : "nearestwidth"
     }
